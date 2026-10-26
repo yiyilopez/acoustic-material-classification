@@ -72,7 +72,7 @@ emplear un filtrado del archivo original.
 La FFT transforma esas muestras en contribuciones de frecuencia. Para una
 frecuencia `f[k]` calculamos una densidad de potencia proporcional a:
 
-$$P_k=\frac{|\operatorname{FFT}((x-\bar{x})w)_k|^2}{f_s\sum_nw_n^2}.$$
+$$P_k=\frac{|\mathrm{FFT}((x-\bar{x})w)_k|^2}{f_s\sum_n w_n^2}.$$
 
 Para el espectro unilateral se duplican las contribuciones positivas salvo los
 extremos que no tienen un par diferente. El código contempla el caso de Nyquist.
