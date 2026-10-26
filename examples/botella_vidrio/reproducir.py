@@ -132,7 +132,7 @@ def reproduce():
         axis.set(xlabel='Tiempo desde el inicio ajustado (ms)',ylabel='Energía acumulada (%)',ylim=(0,103))
         axis.grid(alpha=.12)
     axes[0].set(title='5 · D₉₀: del 5 % al 95 % de energía corregida',xlim=(0,(end-start)/fs*1000))
-    axes[1].set(title=f'Detalle: D₉₀ = {high:.3f} − {low:.3f} = {high-low:.3f} ms',xlim=(0,120))
+    axes[1].set(title=f'Detalle: D₉₀ = t₉₅ − t₀₅ ≈ {high-low:.3f} ms',xlim=(0,120))
     axes[1].annotate(f't₀₅ = {low:.3f} ms',xy=(low,5),xytext=(20,17),arrowprops={'arrowstyle':'->','color':gold})
     axes[1].annotate(f't₉₅ = {high:.3f} ms',xy=(high,95),xytext=(78,75),arrowprops={'arrowstyle':'->','color':gold})
     finish(fig,'04_duracion_energetica.png')
