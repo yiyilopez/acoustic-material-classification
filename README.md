@@ -1,8 +1,8 @@
 # Acoustic Material Classification
 
-**Del sonido de un golpe a descriptores físicos interpretables y modelos evaluados con objetos no vistos.**
+**Estudiar cómo suenan los objetos al golpearlos: frecuencias, distribución espectral y duración de su energía sonora.**
 
-Proyecto experimental de acústica y aprendizaje automático para estudiar objetos
+Proyecto experimental de acústica física para estudiar objetos
 de **madera, vidrio, hierro y plástico rígido**. Combina procesamiento de señales,
 control de calidad, trazabilidad de datos y comparación de modelos por objeto.
 
@@ -10,7 +10,7 @@ control de calidad, trazabilidad de datos y comparación de modelos por objeto.
 > documenta tanto los resultados como sus límites; todavía no es un identificador
 > fiable de materiales para uso general.
 
-![Un audio real y sus cuatro características](docs/tutorial/figuras/00_resumen.png)
+![Qué nos cuenta físicamente un golpe de botella](docs/tutorial/figuras/05_lectura_fisica.png)
 
 **Empieza aquí:** [tutorial visual paso a paso](docs/tutorial_descriptores.md)
 · [escuchar el golpe del ejemplo](examples/botella_vidrio/botella_golpe01.wav)
@@ -19,8 +19,13 @@ control de calidad, trazabilidad de datos y comparación de modelos por objeto.
 
 ## La pregunta
 
-¿Hasta qué punto la distribución de frecuencias y la duración de un impacto
-permiten clasificar el material de un objeto que el modelo no vio durante el entrenamiento?
+¿Qué frecuencias destacan al golpear un objeto, cómo se reparte su potencia
+y cuánto persiste la energía de su sonido? ¿Qué parte de esas variaciones se
+repite en las categorías de material que estamos estudiando?
+
+Medimos e interpretamos esas características acústicas. Después utilizamos
+la clasificación de objetos no vistos como una prueba adicional de la información
+que contienen; el modelo no sustituye la interpretación física del experimento.
 
 El reto es separar indicios útiles del material de las variaciones de forma,
 tamaño, apoyo, percutor y grabación. Se mantienen fuera del clasificador los
@@ -111,7 +116,7 @@ python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e ".[dev,analisis]"
 
-# Recalcular el ejemplo y regenerar sus cinco figuras
+# Recalcular el ejemplo y regenerar sus seis figuras
 python examples/botella_vidrio/reproducir.py
 
 # Ejecutar pruebas de señales, metadatos y separación por objeto

@@ -152,6 +152,39 @@ def reproduce():
     axes[1,1].set(title=f'D₉₀ = {high-low:.3f} ms',xlabel='Tiempo (ms)',ylabel='Energía acumulada (%)',xlim=(0,120),ylim=(0,103))
     fig.suptitle('De un golpe real a cuatro descriptores acústicos',fontsize=17)
     finish(fig,'00_resumen.png')
+
+    fig,axes=plt.subplots(2,2,figsize=(12,8))
+    fig.suptitle('¿Qué nos cuenta físicamente este golpe de botella?',fontsize=17)
+    ax=axes[0,0]
+    ax.plot(frequency/1000,p/p.max()*100,color=blue,lw=.9)
+    ax.axvline(peak/1000,color=gold,linestyle='--')
+    ax.annotate('Destaca una componente\nde 2300 ciclos por segundo',xy=(peak/1000,100),xytext=(7,76),
+        arrowprops={'arrowstyle':'->','color':gold},fontsize=10)
+    ax.set(title='1 · ¿Qué frecuencia destaca más?',xlabel='Frecuencia (miles de ciclos por segundo)',
+        ylabel='Potencia relativa al máximo (%)',xlim=(.1,20),ylim=(0,110))
+    ax=axes[0,1]
+    ax.bar(centers,weights,width=.88,color=blue)
+    ax.axvline(c/1000,color=gold,linestyle='--')
+    ax.text(7,65,'Promedio: unos 3000 Hz\nLas componentes agudas\ntambién cuentan.',fontsize=11)
+    ax.set(title='2 · ¿Dónde queda el promedio del espectro?',xlabel='Frecuencia (miles de ciclos por segundo)',
+        ylabel='Parte de la potencia total (%)',xlim=(0,20),ylim=(0,100))
+    ax=axes[1,0]
+    ax.bar(centers,weights,width=.88,color=blue)
+    ax.axvline(c/1000,color=gold,linestyle='--')
+    ax.axvspan((c-b)/1000,(c+b)/1000,color=gold,alpha=.15)
+    ax.text(7,64,'Hay potencia repartida\nalrededor del promedio.\nAncho relativo: 0,88',fontsize=11)
+    ax.set(title='3 · ¿Qué tan repartidas están las frecuencias?',xlabel='Frecuencia (miles de ciclos por segundo)',
+        ylabel='Parte de la potencia total (%)',xlim=(0,20),ylim=(0,100))
+    ax=axes[1,1]
+    ax.plot(np.r_[0,(starts+counts)/fs*1000],np.r_[0,cumulative*100],color=green,lw=1.7)
+    ax.axvspan(low,high,color=gold,alpha=.2)
+    ax.plot([low,high],[5,95],'o',color=gold)
+    ax.text(72,25,'Entre el 5 % y el 95 %\ntranscurren unos 60 ms.',fontsize=10)
+    ax.set(title='4 · ¿Cuánto dura la parte principal del sonido?',xlabel='Tiempo desde el inicio del segmento (ms)',
+        ylabel='Energía corregida acumulada (%)',xlim=(0,120),ylim=(0,105))
+    fig.text(.10,.015,'Audio real. Las barras agrupan frecuencias para facilitar la lectura. El área sombreada del ancho es solo una referencia.\nEstas medidas describen el sonido del objeto con su forma, apoyo y golpe; no identifican por sí solas el material.',fontsize=9)
+    fig.tight_layout(rect=(0,.075,1,.95))
+    fig.savefig(FIGURES/'05_lectura_fisica.png',dpi=160,bbox_inches='tight');plt.close(fig)
     return result
 
 
