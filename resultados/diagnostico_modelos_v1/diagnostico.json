@@ -1,0 +1,847 @@
+{
+  "estado": "diagnostico_exploratorio_posterior_a_ver_resultados_iniciales",
+  "advertencia": "Se reutilizan los mismos ocho objetos. Comparar variantes no proporciona una nueva evaluación independiente. No se selecciona un ganador definitivo.",
+  "configuraciones": {
+    "fusion_50_50": "Media de probabilidades OOF de A y B; pesos 50/50 fijados sin búsqueda.",
+    "RF_todas_variables": "Mismos parámetros del combinado original; max_features=1.0 en lugar de sqrt.",
+    "logistica_regularizada": "Cuatro predictores; StandardScaler ponderado dentro de cada fold; regresión logística C=1, sin selección de C."
+  },
+  "golpes": 36,
+  "objetos": [
+    "OBJ001",
+    "OBJ002",
+    "OBJ003",
+    "OBJ004",
+    "OBJ005",
+    "OBJ006",
+    "OBJ007",
+    "OBJ008"
+  ],
+  "particiones": [
+    {
+      "objeto_excluido": "OBJ001",
+      "objetos_entrenamiento": [
+        "OBJ002",
+        "OBJ003",
+        "OBJ004",
+        "OBJ005",
+        "OBJ006",
+        "OBJ007",
+        "OBJ008"
+      ],
+      "impactos_entrenamiento": [
+        "SES002_G01",
+        "SES002_G02",
+        "SES002_G03",
+        "SES002_G04",
+        "SES003_G02",
+        "SES003_G03",
+        "SES003_G04",
+        "SES004_G01",
+        "SES004_G02",
+        "SES004_G03",
+        "SES005_G01",
+        "SES005_G02",
+        "SES005_G03",
+        "SES005_G04",
+        "SES005_G05",
+        "SES005_G06",
+        "SES006_G01",
+        "SES006_G02",
+        "SES006_G03",
+        "SES006_G04",
+        "SES006_G05",
+        "SES006_G06",
+        "SES006_G07",
+        "SES007_G01",
+        "SES007_G02",
+        "SES007_G03",
+        "SES007_G04",
+        "SES008_G01",
+        "SES008_G02",
+        "SES008_G03",
+        "SES008_G04",
+        "SES008_G05",
+        "SES008_G06"
+      ],
+      "impactos_evaluacion": [
+        "SES001_G01",
+        "SES001_G02",
+        "SES001_G03"
+      ],
+      "clases_entrenamiento": [
+        "hierro",
+        "madera",
+        "plastico_rigido",
+        "vidrio"
+      ]
+    },
+    {
+      "objeto_excluido": "OBJ002",
+      "objetos_entrenamiento": [
+        "OBJ001",
+        "OBJ003",
+        "OBJ004",
+        "OBJ005",
+        "OBJ006",
+        "OBJ007",
+        "OBJ008"
+      ],
+      "impactos_entrenamiento": [
+        "SES001_G01",
+        "SES001_G02",
+        "SES001_G03",
+        "SES003_G02",
+        "SES003_G03",
+        "SES003_G04",
+        "SES004_G01",
+        "SES004_G02",
+        "SES004_G03",
+        "SES005_G01",
+        "SES005_G02",
+        "SES005_G03",
+        "SES005_G04",
+        "SES005_G05",
+        "SES005_G06",
+        "SES006_G01",
+        "SES006_G02",
+        "SES006_G03",
+        "SES006_G04",
+        "SES006_G05",
+        "SES006_G06",
+        "SES006_G07",
+        "SES007_G01",
+        "SES007_G02",
+        "SES007_G03",
+        "SES007_G04",
+        "SES008_G01",
+        "SES008_G02",
+        "SES008_G03",
+        "SES008_G04",
+        "SES008_G05",
+        "SES008_G06"
+      ],
+      "impactos_evaluacion": [
+        "SES002_G01",
+        "SES002_G02",
+        "SES002_G03",
+        "SES002_G04"
+      ],
+      "clases_entrenamiento": [
+        "hierro",
+        "madera",
+        "plastico_rigido",
+        "vidrio"
+      ]
+    },
+    {
+      "objeto_excluido": "OBJ003",
+      "objetos_entrenamiento": [
+        "OBJ001",
+        "OBJ002",
+        "OBJ004",
+        "OBJ005",
+        "OBJ006",
+        "OBJ007",
+        "OBJ008"
+      ],
+      "impactos_entrenamiento": [
+        "SES001_G01",
+        "SES001_G02",
+        "SES001_G03",
+        "SES002_G01",
+        "SES002_G02",
+        "SES002_G03",
+        "SES002_G04",
+        "SES004_G01",
+        "SES004_G02",
+        "SES004_G03",
+        "SES005_G01",
+        "SES005_G02",
+        "SES005_G03",
+        "SES005_G04",
+        "SES005_G05",
+        "SES005_G06",
+        "SES006_G01",
+        "SES006_G02",
+        "SES006_G03",
+        "SES006_G04",
+        "SES006_G05",
+        "SES006_G06",
+        "SES006_G07",
+        "SES007_G01",
+        "SES007_G02",
+        "SES007_G03",
+        "SES007_G04",
+        "SES008_G01",
+        "SES008_G02",
+        "SES008_G03",
+        "SES008_G04",
+        "SES008_G05",
+        "SES008_G06"
+      ],
+      "impactos_evaluacion": [
+        "SES003_G02",
+        "SES003_G03",
+        "SES003_G04"
+      ],
+      "clases_entrenamiento": [
+        "hierro",
+        "madera",
+        "plastico_rigido",
+        "vidrio"
+      ]
+    },
+    {
+      "objeto_excluido": "OBJ004",
+      "objetos_entrenamiento": [
+        "OBJ001",
+        "OBJ002",
+        "OBJ003",
+        "OBJ005",
+        "OBJ006",
+        "OBJ007",
+        "OBJ008"
+      ],
+      "impactos_entrenamiento": [
+        "SES001_G01",
+        "SES001_G02",
+        "SES001_G03",
+        "SES002_G01",
+        "SES002_G02",
+        "SES002_G03",
+        "SES002_G04",
+        "SES003_G02",
+        "SES003_G03",
+        "SES003_G04",
+        "SES005_G01",
+        "SES005_G02",
+        "SES005_G03",
+        "SES005_G04",
+        "SES005_G05",
+        "SES005_G06",
+        "SES006_G01",
+        "SES006_G02",
+        "SES006_G03",
+        "SES006_G04",
+        "SES006_G05",
+        "SES006_G06",
+        "SES006_G07",
+        "SES007_G01",
+        "SES007_G02",
+        "SES007_G03",
+        "SES007_G04",
+        "SES008_G01",
+        "SES008_G02",
+        "SES008_G03",
+        "SES008_G04",
+        "SES008_G05",
+        "SES008_G06"
+      ],
+      "impactos_evaluacion": [
+        "SES004_G01",
+        "SES004_G02",
+        "SES004_G03"
+      ],
+      "clases_entrenamiento": [
+        "hierro",
+        "madera",
+        "plastico_rigido",
+        "vidrio"
+      ]
+    },
+    {
+      "objeto_excluido": "OBJ005",
+      "objetos_entrenamiento": [
+        "OBJ001",
+        "OBJ002",
+        "OBJ003",
+        "OBJ004",
+        "OBJ006",
+        "OBJ007",
+        "OBJ008"
+      ],
+      "impactos_entrenamiento": [
+        "SES001_G01",
+        "SES001_G02",
+        "SES001_G03",
+        "SES002_G01",
+        "SES002_G02",
+        "SES002_G03",
+        "SES002_G04",
+        "SES003_G02",
+        "SES003_G03",
+        "SES003_G04",
+        "SES004_G01",
+        "SES004_G02",
+        "SES004_G03",
+        "SES006_G01",
+        "SES006_G02",
+        "SES006_G03",
+        "SES006_G04",
+        "SES006_G05",
+        "SES006_G06",
+        "SES006_G07",
+        "SES007_G01",
+        "SES007_G02",
+        "SES007_G03",
+        "SES007_G04",
+        "SES008_G01",
+        "SES008_G02",
+        "SES008_G03",
+        "SES008_G04",
+        "SES008_G05",
+        "SES008_G06"
+      ],
+      "impactos_evaluacion": [
+        "SES005_G01",
+        "SES005_G02",
+        "SES005_G03",
+        "SES005_G04",
+        "SES005_G05",
+        "SES005_G06"
+      ],
+      "clases_entrenamiento": [
+        "hierro",
+        "madera",
+        "plastico_rigido",
+        "vidrio"
+      ]
+    },
+    {
+      "objeto_excluido": "OBJ006",
+      "objetos_entrenamiento": [
+        "OBJ001",
+        "OBJ002",
+        "OBJ003",
+        "OBJ004",
+        "OBJ005",
+        "OBJ007",
+        "OBJ008"
+      ],
+      "impactos_entrenamiento": [
+        "SES001_G01",
+        "SES001_G02",
+        "SES001_G03",
+        "SES002_G01",
+        "SES002_G02",
+        "SES002_G03",
+        "SES002_G04",
+        "SES003_G02",
+        "SES003_G03",
+        "SES003_G04",
+        "SES004_G01",
+        "SES004_G02",
+        "SES004_G03",
+        "SES005_G01",
+        "SES005_G02",
+        "SES005_G03",
+        "SES005_G04",
+        "SES005_G05",
+        "SES005_G06",
+        "SES007_G01",
+        "SES007_G02",
+        "SES007_G03",
+        "SES007_G04",
+        "SES008_G01",
+        "SES008_G02",
+        "SES008_G03",
+        "SES008_G04",
+        "SES008_G05",
+        "SES008_G06"
+      ],
+      "impactos_evaluacion": [
+        "SES006_G01",
+        "SES006_G02",
+        "SES006_G03",
+        "SES006_G04",
+        "SES006_G05",
+        "SES006_G06",
+        "SES006_G07"
+      ],
+      "clases_entrenamiento": [
+        "hierro",
+        "madera",
+        "plastico_rigido",
+        "vidrio"
+      ]
+    },
+    {
+      "objeto_excluido": "OBJ007",
+      "objetos_entrenamiento": [
+        "OBJ001",
+        "OBJ002",
+        "OBJ003",
+        "OBJ004",
+        "OBJ005",
+        "OBJ006",
+        "OBJ008"
+      ],
+      "impactos_entrenamiento": [
+        "SES001_G01",
+        "SES001_G02",
+        "SES001_G03",
+        "SES002_G01",
+        "SES002_G02",
+        "SES002_G03",
+        "SES002_G04",
+        "SES003_G02",
+        "SES003_G03",
+        "SES003_G04",
+        "SES004_G01",
+        "SES004_G02",
+        "SES004_G03",
+        "SES005_G01",
+        "SES005_G02",
+        "SES005_G03",
+        "SES005_G04",
+        "SES005_G05",
+        "SES005_G06",
+        "SES006_G01",
+        "SES006_G02",
+        "SES006_G03",
+        "SES006_G04",
+        "SES006_G05",
+        "SES006_G06",
+        "SES006_G07",
+        "SES008_G01",
+        "SES008_G02",
+        "SES008_G03",
+        "SES008_G04",
+        "SES008_G05",
+        "SES008_G06"
+      ],
+      "impactos_evaluacion": [
+        "SES007_G01",
+        "SES007_G02",
+        "SES007_G03",
+        "SES007_G04"
+      ],
+      "clases_entrenamiento": [
+        "hierro",
+        "madera",
+        "plastico_rigido",
+        "vidrio"
+      ]
+    },
+    {
+      "objeto_excluido": "OBJ008",
+      "objetos_entrenamiento": [
+        "OBJ001",
+        "OBJ002",
+        "OBJ003",
+        "OBJ004",
+        "OBJ005",
+        "OBJ006",
+        "OBJ007"
+      ],
+      "impactos_entrenamiento": [
+        "SES001_G01",
+        "SES001_G02",
+        "SES001_G03",
+        "SES002_G01",
+        "SES002_G02",
+        "SES002_G03",
+        "SES002_G04",
+        "SES003_G02",
+        "SES003_G03",
+        "SES003_G04",
+        "SES004_G01",
+        "SES004_G02",
+        "SES004_G03",
+        "SES005_G01",
+        "SES005_G02",
+        "SES005_G03",
+        "SES005_G04",
+        "SES005_G05",
+        "SES005_G06",
+        "SES006_G01",
+        "SES006_G02",
+        "SES006_G03",
+        "SES006_G04",
+        "SES006_G05",
+        "SES006_G06",
+        "SES006_G07",
+        "SES007_G01",
+        "SES007_G02",
+        "SES007_G03",
+        "SES007_G04"
+      ],
+      "impactos_evaluacion": [
+        "SES008_G01",
+        "SES008_G02",
+        "SES008_G03",
+        "SES008_G04",
+        "SES008_G05",
+        "SES008_G06"
+      ],
+      "clases_entrenamiento": [
+        "hierro",
+        "madera",
+        "plastico_rigido",
+        "vidrio"
+      ]
+    }
+  ],
+  "metricas": {
+    "fusion_50_50": {
+      "aciertos": 4,
+      "objetos": 8,
+      "exactitud_balanceada": 0.5,
+      "matriz_confusion": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "RF_todas_variables": {
+      "aciertos": 1,
+      "objetos": 8,
+      "exactitud_balanceada": 0.125,
+      "matriz_confusion": [
+        [
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "logistica_regularizada": {
+      "aciertos": 2,
+      "objetos": 8,
+      "exactitud_balanceada": 0.25,
+      "matriz_confusion": [
+        [
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "predicciones": [
+    {
+      "variante": "fusion_50_50",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "correcto": true,
+      "p_hierro": 0.36315190786404666,
+      "p_madera": 0.05571879663546328,
+      "p_plastico_rigido": 0.2459215485523536,
+      "p_vidrio": 0.3352077469481365
+    },
+    {
+      "variante": "fusion_50_50",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "correcto": false,
+      "p_hierro": 0.2585511464638302,
+      "p_madera": 0.23561073288095363,
+      "p_plastico_rigido": 0.17940181672902267,
+      "p_vidrio": 0.3264363039261938
+    },
+    {
+      "variante": "fusion_50_50",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "madera",
+      "correcto": true,
+      "p_hierro": 0.13989237269629434,
+      "p_madera": 0.3428540950697814,
+      "p_plastico_rigido": 0.3078744084528399,
+      "p_vidrio": 0.2093791237810847
+    },
+    {
+      "variante": "fusion_50_50",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "correcto": true,
+      "p_hierro": 0.1969669031495012,
+      "p_madera": 0.4739708422478032,
+      "p_plastico_rigido": 0.18143887176730314,
+      "p_vidrio": 0.14762338283539278
+    },
+    {
+      "variante": "fusion_50_50",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "plastico_rigido",
+      "correcto": true,
+      "p_hierro": 0.14212379595712932,
+      "p_madera": 0.2816515398182066,
+      "p_plastico_rigido": 0.31300786250786267,
+      "p_vidrio": 0.2632168017168018
+    },
+    {
+      "variante": "fusion_50_50",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "correcto": false,
+      "p_hierro": 0.28664264505335935,
+      "p_madera": 0.1522022963808678,
+      "p_plastico_rigido": 0.22955024803239096,
+      "p_vidrio": 0.33160481053338203
+    },
+    {
+      "variante": "fusion_50_50",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "correcto": false,
+      "p_hierro": 0.40166762332846895,
+      "p_madera": 0.16274331680030207,
+      "p_plastico_rigido": 0.26509031814454614,
+      "p_vidrio": 0.17049874172668295
+    },
+    {
+      "variante": "fusion_50_50",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "correcto": false,
+      "p_hierro": 0.29743868485077213,
+      "p_madera": 0.16534396518323244,
+      "p_plastico_rigido": 0.44140515034787486,
+      "p_vidrio": 0.09581219961812071
+    },
+    {
+      "variante": "RF_todas_variables",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "correcto": false,
+      "p_hierro": 0.2871970282803616,
+      "p_madera": 0.0004074074074074074,
+      "p_plastico_rigido": 0.1882603230103231,
+      "p_vidrio": 0.524135241301908
+    },
+    {
+      "variante": "RF_todas_variables",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "correcto": false,
+      "p_hierro": 0.23969663438413444,
+      "p_madera": 0.008503637566137565,
+      "p_plastico_rigido": 0.1834286963036964,
+      "p_vidrio": 0.5683710317460317
+    },
+    {
+      "variante": "RF_todas_variables",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "plastico_rigido",
+      "correcto": false,
+      "p_hierro": 0.08348079698079697,
+      "p_madera": 0.12228861262194594,
+      "p_plastico_rigido": 0.6389806166056167,
+      "p_vidrio": 0.1552499737916405
+    },
+    {
+      "variante": "RF_todas_variables",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "correcto": true,
+      "p_hierro": 0.011478592395259059,
+      "p_madera": 0.7403787231287232,
+      "p_plastico_rigido": 0.20638680147013475,
+      "p_vidrio": 0.04175588300588301
+    },
+    {
+      "variante": "RF_todas_variables",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "madera",
+      "correcto": false,
+      "p_hierro": 0.04556678452266686,
+      "p_madera": 0.3702014896867838,
+      "p_plastico_rigido": 0.3471784692250379,
+      "p_vidrio": 0.23705325656551146
+    },
+    {
+      "variante": "RF_todas_variables",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "correcto": false,
+      "p_hierro": 0.23472540026111446,
+      "p_madera": 0.15887641723356008,
+      "p_plastico_rigido": 0.24089028035456608,
+      "p_vidrio": 0.3655079021507594
+    },
+    {
+      "variante": "RF_todas_variables",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "correcto": false,
+      "p_hierro": 0.7355765045140041,
+      "p_madera": 0.0008888888888888888,
+      "p_plastico_rigido": 0.23342083379583392,
+      "p_vidrio": 0.030113772801272802
+    },
+    {
+      "variante": "RF_todas_variables",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "correcto": false,
+      "p_hierro": 0.22012530987530987,
+      "p_madera": 0.05269276556776556,
+      "p_plastico_rigido": 0.7065114946781614,
+      "p_vidrio": 0.020670429878763212
+    },
+    {
+      "variante": "logistica_regularizada",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "correcto": false,
+      "p_hierro": 0.3778755133997125,
+      "p_madera": 0.020871469331044574,
+      "p_plastico_rigido": 0.14489569842851624,
+      "p_vidrio": 0.45635731884072667
+    },
+    {
+      "variante": "logistica_regularizada",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "correcto": false,
+      "p_hierro": 0.30327477296334127,
+      "p_madera": 0.1290571757284512,
+      "p_plastico_rigido": 0.09583228946795039,
+      "p_vidrio": 0.471835761840257
+    },
+    {
+      "variante": "logistica_regularizada",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "madera",
+      "correcto": true,
+      "p_hierro": 0.16679366419178906,
+      "p_madera": 0.44136061147726563,
+      "p_plastico_rigido": 0.2572406060491039,
+      "p_vidrio": 0.13460511828184152
+    },
+    {
+      "variante": "logistica_regularizada",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "correcto": true,
+      "p_hierro": 0.052387047784619646,
+      "p_madera": 0.4550332579596528,
+      "p_plastico_rigido": 0.4199988673670665,
+      "p_vidrio": 0.07258082688866103
+    },
+    {
+      "variante": "logistica_regularizada",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "madera",
+      "correcto": false,
+      "p_hierro": 0.025472305633396457,
+      "p_madera": 0.5434321172611555,
+      "p_plastico_rigido": 0.32702854297432243,
+      "p_vidrio": 0.10406703413112565
+    },
+    {
+      "variante": "logistica_regularizada",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "correcto": false,
+      "p_hierro": 0.19516072542806415,
+      "p_madera": 0.16571124801682097,
+      "p_plastico_rigido": 0.07121337425363285,
+      "p_vidrio": 0.567914652301482
+    },
+    {
+      "variante": "logistica_regularizada",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "correcto": false,
+      "p_hierro": 0.7531261059218363,
+      "p_madera": 0.000698071404918993,
+      "p_plastico_rigido": 0.17882771457985688,
+      "p_vidrio": 0.06734810809338773
+    },
+    {
+      "variante": "logistica_regularizada",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "correcto": false,
+      "p_hierro": 0.3610322415280707,
+      "p_madera": 0.2920228397628362,
+      "p_plastico_rigido": 0.26078052196321727,
+      "p_vidrio": 0.0861643967458759
+    }
+  ]
+}

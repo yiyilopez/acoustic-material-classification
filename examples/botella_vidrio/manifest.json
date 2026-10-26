@@ -1,0 +1,51 @@
+{
+  "impacto_id": "SES008_G01",
+  "objeto": "Botella de vidrio",
+  "fs_hz": 48000,
+  "canales": 1,
+  "subtipo": "PCM_24",
+  "fuente": "Recorte exacto de una grabación real del piloto; sin filtrado ni normalización",
+  "primera_muestra_del_recorte_en_grabacion": 152040,
+  "sha256_original_m4a": "5dad0f1b8c22c1fc7d9dc148778c86d28f6a3037ce9718e164585dcec9adaa84",
+  "sha256_recorte": "d26fb0273ef2a5db1899c2c78bccd90f4e6285de0686339f9d9c8cb079b0e8dd",
+  "ventanas_relativas_recorte": {
+    "fondo": [
+      0,
+      14400
+    ],
+    "temporal": [
+      16440,
+      40728
+    ],
+    "espectral": [
+      16440,
+      21240
+    ]
+  },
+  "configuracion": {
+    "banda_hz": [
+      100,
+      20000
+    ],
+    "ventana_espectral_ms": 100,
+    "contexto_pre_ms": 2,
+    "bloque_energia_ms": 1,
+    "suavizado_final_ms": 5,
+    "persistencia_final_ms": 30,
+    "factor_potencia_final": 2,
+    "max_cola_ms": 750,
+    "fondo_inicio_antes_pico_ms": 350,
+    "fondo_fin_antes_pico_ms": 50,
+    "rampa_inicial_ms": 1,
+    "rampa_final_ms": 10
+  },
+  "esperados": {
+    "fp_hz": 2300.0,
+    "centroide_hz": 2998.7062699293942,
+    "ancho_hz": 2640.981563287289,
+    "ancho_relativo": 0.880706986799835,
+    "d90_s": 0.06011472468284736,
+    "t05_s": 0.0036105726940161105,
+    "t95_s": 0.06372529737686347
+  }
+}

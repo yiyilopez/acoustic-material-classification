@@ -1,0 +1,1579 @@
+{
+  "alcance": "Diagnóstico posterior al primer ensayo; no validación independiente ni selección de parámetros.",
+  "variantes": {
+    "resta_fondo": "Resta espectral del promedio de tres fondos de 100 ms y rectificación a cero.",
+    "sin_ataque_10ms": "Misma ventana de 100 ms y banda 100–20000 Hz, desplazada 10 ms después del inicio ajustado. D90 sin cambios.",
+    "banda_hasta_10k": "Misma ventana original; banda reducida a 100–10000 Hz. D90 sin cambios."
+  },
+  "metricas": {
+    "resta_fondo": {
+      "A_espectral": {
+        "aciertos": 2,
+        "exactitud_balanceada": 0.25,
+        "aciertos_vidrio": 0,
+        "matriz_confusion": [
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "C_combinado": {
+        "aciertos": 1,
+        "exactitud_balanceada": 0.125,
+        "aciertos_vidrio": 0,
+        "matriz_confusion": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "fusion_50_50": {
+        "aciertos": 4,
+        "exactitud_balanceada": 0.5,
+        "aciertos_vidrio": 0
+      }
+    },
+    "sin_ataque_10ms": {
+      "A_espectral": {
+        "aciertos": 4,
+        "exactitud_balanceada": 0.5,
+        "aciertos_vidrio": 0,
+        "matriz_confusion": [
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "C_combinado": {
+        "aciertos": 5,
+        "exactitud_balanceada": 0.625,
+        "aciertos_vidrio": 0,
+        "matriz_confusion": [
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "fusion_50_50": {
+        "aciertos": 6,
+        "exactitud_balanceada": 0.75,
+        "aciertos_vidrio": 0
+      }
+    },
+    "banda_hasta_10k": {
+      "A_espectral": {
+        "aciertos": 4,
+        "exactitud_balanceada": 0.5,
+        "aciertos_vidrio": 0,
+        "matriz_confusion": [
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "C_combinado": {
+        "aciertos": 4,
+        "exactitud_balanceada": 0.5,
+        "aciertos_vidrio": 0,
+        "matriz_confusion": [
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "fusion_50_50": {
+        "aciertos": 4,
+        "exactitud_balanceada": 0.5,
+        "aciertos_vidrio": 0
+      }
+    }
+  },
+  "control_senales": [
+    {
+      "impacto_id": "SES001_G01",
+      "objeto_id": "OBJ001",
+      "material": "hierro",
+      "fp_hz": 4170.0,
+      "centroide_hz": 3982.5140747247287,
+      "d90_s": 0.10648197898525794,
+      "relacion_energia_fondo_db": 11.792823457905016,
+      "energia_14_5_15_8k_fraccion": 0.001058332141111242,
+      "relacion_banda_alta_fondo_db": 23.213285211929712,
+      "centroide_cambio_resta_fondo_relativo": 0.032007267598898895,
+      "resta_fondo_fp_hz": 4170.0,
+      "sin_ataque_10ms_fp_hz": 4170.0,
+      "banda_hasta_10k_fp_hz": 4170.0
+    },
+    {
+      "impacto_id": "SES001_G02",
+      "objeto_id": "OBJ001",
+      "material": "hierro",
+      "fp_hz": 4160.0,
+      "centroide_hz": 4985.697901465027,
+      "d90_s": 0.060244624069791225,
+      "relacion_energia_fondo_db": 15.426013576643225,
+      "energia_14_5_15_8k_fraccion": 0.0006363714628899764,
+      "relacion_banda_alta_fondo_db": 28.958434748224988,
+      "centroide_cambio_resta_fondo_relativo": 0.006257094836957064,
+      "resta_fondo_fp_hz": 4160.0,
+      "sin_ataque_10ms_fp_hz": 4160.0,
+      "banda_hasta_10k_fp_hz": 4160.0
+    },
+    {
+      "impacto_id": "SES001_G03",
+      "objeto_id": "OBJ001",
+      "material": "hierro",
+      "fp_hz": 4170.0,
+      "centroide_hz": 5387.01500681186,
+      "d90_s": 0.04112039858184799,
+      "relacion_energia_fondo_db": 18.80128919945082,
+      "energia_14_5_15_8k_fraccion": 0.004850483180112507,
+      "relacion_banda_alta_fondo_db": 39.44697651948842,
+      "centroide_cambio_resta_fondo_relativo": 0.0037712776148318508,
+      "resta_fondo_fp_hz": 4170.0,
+      "sin_ataque_10ms_fp_hz": 4170.0,
+      "banda_hasta_10k_fp_hz": 4170.0
+    },
+    {
+      "impacto_id": "SES002_G01",
+      "objeto_id": "OBJ002",
+      "material": "hierro",
+      "fp_hz": 4560.0,
+      "centroide_hz": 5595.297741757884,
+      "d90_s": 0.0832119637159764,
+      "relacion_energia_fondo_db": 24.411270509813612,
+      "energia_14_5_15_8k_fraccion": 0.010964401470726753,
+      "relacion_banda_alta_fondo_db": 50.65466557194675,
+      "centroide_cambio_resta_fondo_relativo": 0.0008602718229259177,
+      "resta_fondo_fp_hz": 4560.0,
+      "sin_ataque_10ms_fp_hz": 4560.0,
+      "banda_hasta_10k_fp_hz": 4560.0
+    },
+    {
+      "impacto_id": "SES002_G02",
+      "objeto_id": "OBJ002",
+      "material": "hierro",
+      "fp_hz": 4560.0,
+      "centroide_hz": 4490.907643672654,
+      "d90_s": 0.08351983591904218,
+      "relacion_energia_fondo_db": 16.61178226021881,
+      "energia_14_5_15_8k_fraccion": 0.0014429085708734701,
+      "relacion_banda_alta_fondo_db": 30.74077388800856,
+      "centroide_cambio_resta_fondo_relativo": 0.00622997066640543,
+      "resta_fondo_fp_hz": 4560.0,
+      "sin_ataque_10ms_fp_hz": 4560.0,
+      "banda_hasta_10k_fp_hz": 4560.0
+    },
+    {
+      "impacto_id": "SES002_G03",
+      "objeto_id": "OBJ002",
+      "material": "hierro",
+      "fp_hz": 4560.0,
+      "centroide_hz": 3772.1118659121494,
+      "d90_s": 0.134401730913029,
+      "relacion_energia_fondo_db": 6.63149252020658,
+      "energia_14_5_15_8k_fraccion": 0.021416700967988776,
+      "relacion_banda_alta_fondo_db": 31.29302060051011,
+      "centroide_cambio_resta_fondo_relativo": 0.1455517373221387,
+      "resta_fondo_fp_hz": 4560.0,
+      "sin_ataque_10ms_fp_hz": 4560.0,
+      "banda_hasta_10k_fp_hz": 4560.0
+    },
+    {
+      "impacto_id": "SES002_G04",
+      "objeto_id": "OBJ002",
+      "material": "hierro",
+      "fp_hz": 4560.0,
+      "centroide_hz": 3862.291527739197,
+      "d90_s": 0.11116947802581405,
+      "relacion_energia_fondo_db": 12.665836957952589,
+      "energia_14_5_15_8k_fraccion": 0.022538330162318012,
+      "relacion_banda_alta_fondo_db": 37.78131177109204,
+      "centroide_cambio_resta_fondo_relativo": 0.025580770940252677,
+      "resta_fondo_fp_hz": 4560.0,
+      "sin_ataque_10ms_fp_hz": 4560.0,
+      "banda_hasta_10k_fp_hz": 4560.0
+    },
+    {
+      "impacto_id": "SES003_G02",
+      "objeto_id": "OBJ003",
+      "material": "madera",
+      "fp_hz": 1430.0,
+      "centroide_hz": 1455.0409209376917,
+      "d90_s": 0.057725303267875734,
+      "relacion_energia_fondo_db": 22.68638508558093,
+      "energia_14_5_15_8k_fraccion": 0.0013392900432281475,
+      "relacion_banda_alta_fondo_db": 27.76505305226089,
+      "centroide_cambio_resta_fondo_relativo": 0.0005119630911358367,
+      "resta_fondo_fp_hz": 1430.0,
+      "sin_ataque_10ms_fp_hz": 1430.0,
+      "banda_hasta_10k_fp_hz": 1430.0
+    },
+    {
+      "impacto_id": "SES003_G03",
+      "objeto_id": "OBJ003",
+      "material": "madera",
+      "fp_hz": 1430.0,
+      "centroide_hz": 1596.5098679268651,
+      "d90_s": 0.08269000538659142,
+      "relacion_energia_fondo_db": 20.92856161771486,
+      "energia_14_5_15_8k_fraccion": 0.0070760879243727095,
+      "relacion_banda_alta_fondo_db": 33.21778365469096,
+      "centroide_cambio_resta_fondo_relativo": 0.0012816021594339523,
+      "resta_fondo_fp_hz": 1430.0,
+      "sin_ataque_10ms_fp_hz": 1400.0,
+      "banda_hasta_10k_fp_hz": 1430.0
+    },
+    {
+      "impacto_id": "SES003_G04",
+      "objeto_id": "OBJ003",
+      "material": "madera",
+      "fp_hz": 1430.0,
+      "centroide_hz": 1358.3972122875919,
+      "d90_s": 0.0789676760332162,
+      "relacion_energia_fondo_db": 22.1559000282327,
+      "energia_14_5_15_8k_fraccion": 0.00024273641745791122,
+      "relacion_banda_alta_fondo_db": 21.467226419968103,
+      "centroide_cambio_resta_fondo_relativo": 0.0005793895408482349,
+      "resta_fondo_fp_hz": 1430.0,
+      "sin_ataque_10ms_fp_hz": 1400.0,
+      "banda_hasta_10k_fp_hz": 1430.0
+    },
+    {
+      "impacto_id": "SES004_G01",
+      "objeto_id": "OBJ004",
+      "material": "madera",
+      "fp_hz": 850.0,
+      "centroide_hz": 1569.225537579796,
+      "d90_s": 0.09480565298454999,
+      "relacion_energia_fondo_db": 13.860019369437834,
+      "energia_14_5_15_8k_fraccion": 0.0026205648954274255,
+      "relacion_banda_alta_fondo_db": 30.31017097201072,
+      "centroide_cambio_resta_fondo_relativo": 0.01157805076120067,
+      "resta_fondo_fp_hz": 850.0,
+      "sin_ataque_10ms_fp_hz": 850.0,
+      "banda_hasta_10k_fp_hz": 850.0
+    },
+    {
+      "impacto_id": "SES004_G02",
+      "objeto_id": "OBJ004",
+      "material": "madera",
+      "fp_hz": 820.0,
+      "centroide_hz": 2599.683961150183,
+      "d90_s": 0.08008423610991502,
+      "relacion_energia_fondo_db": 15.40101994019282,
+      "energia_14_5_15_8k_fraccion": 0.041075038182538354,
+      "relacion_banda_alta_fondo_db": 45.21818377851907,
+      "centroide_cambio_resta_fondo_relativo": 0.009922397685272385,
+      "resta_fondo_fp_hz": 820.0,
+      "sin_ataque_10ms_fp_hz": 820.0,
+      "banda_hasta_10k_fp_hz": 820.0
+    },
+    {
+      "impacto_id": "SES004_G03",
+      "objeto_id": "OBJ004",
+      "material": "madera",
+      "fp_hz": 850.0,
+      "centroide_hz": 1399.845186310769,
+      "d90_s": 0.09498963248782712,
+      "relacion_energia_fondo_db": 8.606235907255261,
+      "energia_14_5_15_8k_fraccion": 0.006725993378724609,
+      "relacion_banda_alta_fondo_db": 33.557364599121456,
+      "centroide_cambio_resta_fondo_relativo": 0.04953499324252074,
+      "resta_fondo_fp_hz": 850.0,
+      "sin_ataque_10ms_fp_hz": 850.0,
+      "banda_hasta_10k_fp_hz": 850.0
+    },
+    {
+      "impacto_id": "SES004_G04",
+      "objeto_id": "OBJ004",
+      "material": "madera",
+      "fp_hz": 820.0,
+      "centroide_hz": 1497.121936727579,
+      "d90_s": null,
+      "relacion_energia_fondo_db": 8.188824691246307,
+      "energia_14_5_15_8k_fraccion": 0.015357436154983639,
+      "relacion_banda_alta_fondo_db": 34.864473486446805,
+      "centroide_cambio_resta_fondo_relativo": 0.025696387234834566,
+      "resta_fondo_fp_hz": 820.0,
+      "sin_ataque_10ms_fp_hz": 820.0,
+      "banda_hasta_10k_fp_hz": 820.0
+    },
+    {
+      "impacto_id": "SES005_G01",
+      "objeto_id": "OBJ005",
+      "material": "plastico_rigido",
+      "fp_hz": 1470.0,
+      "centroide_hz": 3352.307405892817,
+      "d90_s": 0.05444963264571802,
+      "relacion_energia_fondo_db": 25.099255382882077,
+      "energia_14_5_15_8k_fraccion": 0.02022761910572437,
+      "relacion_banda_alta_fondo_db": 53.253574711579255,
+      "centroide_cambio_resta_fondo_relativo": 0.0007179565238161112,
+      "resta_fondo_fp_hz": 1470.0,
+      "sin_ataque_10ms_fp_hz": 1470.0,
+      "banda_hasta_10k_fp_hz": 1470.0
+    },
+    {
+      "impacto_id": "SES005_G02",
+      "objeto_id": "OBJ005",
+      "material": "plastico_rigido",
+      "fp_hz": 1470.0,
+      "centroide_hz": 2478.7573157031647,
+      "d90_s": 0.03684633466046431,
+      "relacion_energia_fondo_db": 22.3871652303937,
+      "energia_14_5_15_8k_fraccion": 0.005678667732960574,
+      "relacion_banda_alta_fondo_db": 45.47746092413994,
+      "centroide_cambio_resta_fondo_relativo": 0.0010227810762786047,
+      "resta_fondo_fp_hz": 1470.0,
+      "sin_ataque_10ms_fp_hz": 1490.0,
+      "banda_hasta_10k_fp_hz": 1470.0
+    },
+    {
+      "impacto_id": "SES005_G03",
+      "objeto_id": "OBJ005",
+      "material": "plastico_rigido",
+      "fp_hz": 1450.0,
+      "centroide_hz": 2376.005733197802,
+      "d90_s": 0.03957189101972467,
+      "relacion_energia_fondo_db": 23.47675301328082,
+      "energia_14_5_15_8k_fraccion": 0.009469733801834563,
+      "relacion_banda_alta_fondo_db": 47.59969458772389,
+      "centroide_cambio_resta_fondo_relativo": 0.0009124151916524498,
+      "resta_fondo_fp_hz": 1450.0,
+      "sin_ataque_10ms_fp_hz": 1450.0,
+      "banda_hasta_10k_fp_hz": 1450.0
+    },
+    {
+      "impacto_id": "SES005_G04",
+      "objeto_id": "OBJ005",
+      "material": "plastico_rigido",
+      "fp_hz": 1450.0,
+      "centroide_hz": 3160.2953807086587,
+      "d90_s": 0.059665413891556815,
+      "relacion_energia_fondo_db": 16.911478426860594,
+      "energia_14_5_15_8k_fraccion": 0.009463866650093368,
+      "relacion_banda_alta_fondo_db": 40.38422062500242,
+      "centroide_cambio_resta_fondo_relativo": 0.006240422798881175,
+      "resta_fondo_fp_hz": 1450.0,
+      "sin_ataque_10ms_fp_hz": 1420.0,
+      "banda_hasta_10k_fp_hz": 1450.0
+    },
+    {
+      "impacto_id": "SES005_G05",
+      "objeto_id": "OBJ005",
+      "material": "plastico_rigido",
+      "fp_hz": 1440.0,
+      "centroide_hz": 2277.351190235483,
+      "d90_s": 0.06458657836872508,
+      "relacion_energia_fondo_db": 17.643960400840957,
+      "energia_14_5_15_8k_fraccion": 0.001979502338881279,
+      "relacion_banda_alta_fondo_db": 34.73076101988835,
+      "centroide_cambio_resta_fondo_relativo": 0.004130482501586297,
+      "resta_fondo_fp_hz": 1440.0,
+      "sin_ataque_10ms_fp_hz": 1440.0,
+      "banda_hasta_10k_fp_hz": 1440.0
+    },
+    {
+      "impacto_id": "SES005_G06",
+      "objeto_id": "OBJ005",
+      "material": "plastico_rigido",
+      "fp_hz": 1470.0,
+      "centroide_hz": 2710.518775361727,
+      "d90_s": 0.05021430852939386,
+      "relacion_energia_fondo_db": 20.855166975992603,
+      "energia_14_5_15_8k_fraccion": 0.007822255853608334,
+      "relacion_banda_alta_fondo_db": 42.73381171516878,
+      "centroide_cambio_resta_fondo_relativo": 0.003022440177119605,
+      "resta_fondo_fp_hz": 1470.0,
+      "sin_ataque_10ms_fp_hz": 1440.0,
+      "banda_hasta_10k_fp_hz": 1470.0
+    },
+    {
+      "impacto_id": "SES006_G01",
+      "objeto_id": "OBJ006",
+      "material": "plastico_rigido",
+      "fp_hz": 130.0,
+      "centroide_hz": 1640.774009649103,
+      "d90_s": 0.11199586995783231,
+      "relacion_energia_fondo_db": 6.681478615099195,
+      "energia_14_5_15_8k_fraccion": 0.016112807435009986,
+      "relacion_banda_alta_fondo_db": 30.279131382081992,
+      "centroide_cambio_resta_fondo_relativo": 0.08605013294394093,
+      "resta_fondo_fp_hz": 720.0,
+      "sin_ataque_10ms_fp_hz": 130.0,
+      "banda_hasta_10k_fp_hz": 130.0
+    },
+    {
+      "impacto_id": "SES006_G02",
+      "objeto_id": "OBJ006",
+      "material": "plastico_rigido",
+      "fp_hz": 3420.0,
+      "centroide_hz": 6256.999318599584,
+      "d90_s": 0.04847219994693613,
+      "relacion_energia_fondo_db": 17.724692463365766,
+      "energia_14_5_15_8k_fraccion": 0.07838083728793177,
+      "relacion_banda_alta_fondo_db": 50.9231988064674,
+      "centroide_cambio_resta_fondo_relativo": 0.0028950578453059406,
+      "resta_fondo_fp_hz": 3420.0,
+      "sin_ataque_10ms_fp_hz": 2720.0,
+      "banda_hasta_10k_fp_hz": 3420.0
+    },
+    {
+      "impacto_id": "SES006_G03",
+      "objeto_id": "OBJ006",
+      "material": "plastico_rigido",
+      "fp_hz": 1450.0,
+      "centroide_hz": 4755.810247979446,
+      "d90_s": 0.06512054123941376,
+      "relacion_energia_fondo_db": 20.610575634702574,
+      "energia_14_5_15_8k_fraccion": 0.03130199959027775,
+      "relacion_banda_alta_fondo_db": 50.89912302420466,
+      "centroide_cambio_resta_fondo_relativo": 0.002134123116739251,
+      "resta_fondo_fp_hz": 1450.0,
+      "sin_ataque_10ms_fp_hz": 2710.0,
+      "banda_hasta_10k_fp_hz": 1450.0
+    },
+    {
+      "impacto_id": "SES006_G04",
+      "objeto_id": "OBJ006",
+      "material": "plastico_rigido",
+      "fp_hz": 1740.0,
+      "centroide_hz": 4029.4564332267705,
+      "d90_s": 0.09698259312998048,
+      "relacion_energia_fondo_db": 10.15491698108728,
+      "energia_14_5_15_8k_fraccion": 0.03436516870187404,
+      "relacion_banda_alta_fondo_db": 38.701898981701795,
+      "centroide_cambio_resta_fondo_relativo": 0.025714506856887847,
+      "resta_fondo_fp_hz": 1740.0,
+      "sin_ataque_10ms_fp_hz": 530.0,
+      "banda_hasta_10k_fp_hz": 1740.0
+    },
+    {
+      "impacto_id": "SES006_G05",
+      "objeto_id": "OBJ006",
+      "material": "plastico_rigido",
+      "fp_hz": 15170.0,
+      "centroide_hz": 4824.638139989559,
+      "d90_s": 0.04818122668749354,
+      "relacion_energia_fondo_db": 14.19512318886033,
+      "energia_14_5_15_8k_fraccion": 0.06875826325766968,
+      "relacion_banda_alta_fondo_db": 46.12441423510127,
+      "centroide_cambio_resta_fondo_relativo": 0.01029324997391703,
+      "resta_fondo_fp_hz": 15170.0,
+      "sin_ataque_10ms_fp_hz": 15190.0,
+      "banda_hasta_10k_fp_hz": 1660.0
+    },
+    {
+      "impacto_id": "SES006_G06",
+      "objeto_id": "OBJ006",
+      "material": "plastico_rigido",
+      "fp_hz": 15170.0,
+      "centroide_hz": 5152.0124801910615,
+      "d90_s": 0.06264462495201942,
+      "relacion_energia_fondo_db": 13.78064088469264,
+      "energia_14_5_15_8k_fraccion": 0.0798244233155434,
+      "relacion_banda_alta_fondo_db": 41.02182646267353,
+      "centroide_cambio_resta_fondo_relativo": 0.012729951374526538,
+      "resta_fondo_fp_hz": 15170.0,
+      "sin_ataque_10ms_fp_hz": 3380.0,
+      "banda_hasta_10k_fp_hz": 3380.0
+    },
+    {
+      "impacto_id": "SES006_G07",
+      "objeto_id": "OBJ006",
+      "material": "plastico_rigido",
+      "fp_hz": 15110.0,
+      "centroide_hz": 6492.937028678486,
+      "d90_s": 0.058792822877104495,
+      "relacion_energia_fondo_db": 13.583493264584998,
+      "energia_14_5_15_8k_fraccion": 0.17419839513502852,
+      "relacion_banda_alta_fondo_db": 49.37436866609925,
+      "centroide_cambio_resta_fondo_relativo": 0.015208595671127912,
+      "resta_fondo_fp_hz": 15110.0,
+      "sin_ataque_10ms_fp_hz": 130.0,
+      "banda_hasta_10k_fp_hz": 1780.0
+    },
+    {
+      "impacto_id": "SES007_G01",
+      "objeto_id": "OBJ007",
+      "material": "vidrio",
+      "fp_hz": 4540.0,
+      "centroide_hz": 5679.851464962298,
+      "d90_s": 0.05869766424818393,
+      "relacion_energia_fondo_db": 21.770904658694544,
+      "energia_14_5_15_8k_fraccion": 0.05840063428187794,
+      "relacion_banda_alta_fondo_db": 52.4027522087215,
+      "centroide_cambio_resta_fondo_relativo": 0.0024422223699146137,
+      "resta_fondo_fp_hz": 4540.0,
+      "sin_ataque_10ms_fp_hz": 4560.0,
+      "banda_hasta_10k_fp_hz": 4540.0
+    },
+    {
+      "impacto_id": "SES007_G02",
+      "objeto_id": "OBJ007",
+      "material": "vidrio",
+      "fp_hz": 4560.0,
+      "centroide_hz": 5823.031439971167,
+      "d90_s": 0.08054449290286678,
+      "relacion_energia_fondo_db": 19.820658087981645,
+      "energia_14_5_15_8k_fraccion": 0.12024493130183378,
+      "relacion_banda_alta_fondo_db": 51.852660989365674,
+      "centroide_cambio_resta_fondo_relativo": 0.005624336980952208,
+      "resta_fondo_fp_hz": 4560.0,
+      "sin_ataque_10ms_fp_hz": 4560.0,
+      "banda_hasta_10k_fp_hz": 4560.0
+    },
+    {
+      "impacto_id": "SES007_G03",
+      "objeto_id": "OBJ007",
+      "material": "vidrio",
+      "fp_hz": 15190.0,
+      "centroide_hz": 9077.53735035303,
+      "d90_s": 0.06870582531304464,
+      "relacion_energia_fondo_db": 25.862459844465683,
+      "energia_14_5_15_8k_fraccion": 0.38766201216650203,
+      "relacion_banda_alta_fondo_db": 65.69015164678595,
+      "centroide_cambio_resta_fondo_relativo": 0.0007041054049212881,
+      "resta_fondo_fp_hz": 15190.0,
+      "sin_ataque_10ms_fp_hz": 15180.0,
+      "banda_hasta_10k_fp_hz": 4100.0
+    },
+    {
+      "impacto_id": "SES007_G04",
+      "objeto_id": "OBJ007",
+      "material": "vidrio",
+      "fp_hz": 15210.0,
+      "centroide_hz": 11605.483474081211,
+      "d90_s": 0.0641725386059547,
+      "relacion_energia_fondo_db": 23.523571017055417,
+      "energia_14_5_15_8k_fraccion": 0.6061467095258251,
+      "relacion_banda_alta_fondo_db": 64.34456679664329,
+      "centroide_cambio_resta_fondo_relativo": 0.00176467044099466,
+      "resta_fondo_fp_hz": 15210.0,
+      "sin_ataque_10ms_fp_hz": 15210.0,
+      "banda_hasta_10k_fp_hz": 6080.0
+    },
+    {
+      "impacto_id": "SES008_G01",
+      "objeto_id": "OBJ008",
+      "material": "vidrio",
+      "fp_hz": 2300.0,
+      "centroide_hz": 2998.7062699293942,
+      "d90_s": 0.06011472468284736,
+      "relacion_energia_fondo_db": 30.242746887587025,
+      "energia_14_5_15_8k_fraccion": 0.031534251842304066,
+      "relacion_banda_alta_fondo_db": 61.412342315048036,
+      "centroide_cambio_resta_fondo_relativo": 0.00011880149014537955,
+      "resta_fondo_fp_hz": 2300.0,
+      "sin_ataque_10ms_fp_hz": 2300.0,
+      "banda_hasta_10k_fp_hz": 2300.0
+    },
+    {
+      "impacto_id": "SES008_G02",
+      "objeto_id": "OBJ008",
+      "material": "vidrio",
+      "fp_hz": 2300.0,
+      "centroide_hz": 3068.72732236293,
+      "d90_s": 0.09867296299492194,
+      "relacion_energia_fondo_db": 31.375020702873027,
+      "energia_14_5_15_8k_fraccion": 0.03681168234338903,
+      "relacion_banda_alta_fondo_db": 62.722785708948976,
+      "centroide_cambio_resta_fondo_relativo": 0.00011622104767334227,
+      "resta_fondo_fp_hz": 2300.0,
+      "sin_ataque_10ms_fp_hz": 2300.0,
+      "banda_hasta_10k_fp_hz": 2300.0
+    },
+    {
+      "impacto_id": "SES008_G03",
+      "objeto_id": "OBJ008",
+      "material": "vidrio",
+      "fp_hz": 2300.0,
+      "centroide_hz": 4023.4162368663538,
+      "d90_s": 0.11239211310206335,
+      "relacion_energia_fondo_db": 28.94249661575865,
+      "energia_14_5_15_8k_fraccion": 0.06525469149645337,
+      "relacion_banda_alta_fondo_db": 62.14084620212445,
+      "centroide_cambio_resta_fondo_relativo": 0.00019337986244985676,
+      "resta_fondo_fp_hz": 2300.0,
+      "sin_ataque_10ms_fp_hz": 2300.0,
+      "banda_hasta_10k_fp_hz": 2300.0
+    },
+    {
+      "impacto_id": "SES008_G04",
+      "objeto_id": "OBJ008",
+      "material": "vidrio",
+      "fp_hz": 2300.0,
+      "centroide_hz": 2514.4086171686604,
+      "d90_s": 0.09035014218729825,
+      "relacion_energia_fondo_db": 24.528364596371738,
+      "energia_14_5_15_8k_fraccion": 0.0013700864293171942,
+      "relacion_banda_alta_fondo_db": 40.81248905915206,
+      "centroide_cambio_resta_fondo_relativo": 0.0004853827438610948,
+      "resta_fondo_fp_hz": 2300.0,
+      "sin_ataque_10ms_fp_hz": 2300.0,
+      "banda_hasta_10k_fp_hz": 2300.0
+    },
+    {
+      "impacto_id": "SES008_G05",
+      "objeto_id": "OBJ008",
+      "material": "vidrio",
+      "fp_hz": 2310.0,
+      "centroide_hz": 3293.772935164477,
+      "d90_s": 0.046502364273237895,
+      "relacion_energia_fondo_db": 27.604949776120588,
+      "energia_14_5_15_8k_fraccion": 0.030409190365500376,
+      "relacion_banda_alta_fondo_db": 55.218614445626805,
+      "centroide_cambio_resta_fondo_relativo": 0.00035564816734584976,
+      "resta_fondo_fp_hz": 2310.0,
+      "sin_ataque_10ms_fp_hz": 2310.0,
+      "banda_hasta_10k_fp_hz": 2310.0
+    },
+    {
+      "impacto_id": "SES008_G06",
+      "objeto_id": "OBJ008",
+      "material": "vidrio",
+      "fp_hz": 2310.0,
+      "centroide_hz": 3042.010098348759,
+      "d90_s": 0.06123492465632717,
+      "relacion_energia_fondo_db": 22.980255800966077,
+      "energia_14_5_15_8k_fraccion": 0.0005971039485528286,
+      "relacion_banda_alta_fondo_db": 35.045861921963436,
+      "centroide_cambio_resta_fondo_relativo": 0.0008643402006681175,
+      "resta_fondo_fp_hz": 2310.0,
+      "sin_ataque_10ms_fp_hz": 2310.0,
+      "banda_hasta_10k_fp_hz": 2310.0
+    }
+  ],
+  "predicciones": [
+    {
+      "variante": "resta_fondo",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.5175834783312854,
+      "p_madera": 0.015732082732082733,
+      "p_plastico_rigido": 0.08450456027842507,
+      "p_vidrio": 0.38217987865820696
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "p_hierro": 0.2847245571694101,
+      "p_madera": 0.018980600146041325,
+      "p_plastico_rigido": 0.2601025390051127,
+      "p_vidrio": 0.4361923036794362
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.08126608268274933,
+      "p_madera": 0.3368109513942848,
+      "p_plastico_rigido": 0.4230362692862694,
+      "p_vidrio": 0.15888669663669666
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.005665661498994831,
+      "p_madera": 0.6907356933190267,
+      "p_plastico_rigido": 0.2570362662029329,
+      "p_vidrio": 0.046562378979045645
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "madera",
+      "p_hierro": 0.060251433751433714,
+      "p_madera": 0.4428470433887101,
+      "p_plastico_rigido": 0.2539113417446753,
+      "p_vidrio": 0.2429901811151812
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "p_hierro": 0.3477329403400831,
+      "p_madera": 0.15881682338825195,
+      "p_plastico_rigido": 0.13029528804528806,
+      "p_vidrio": 0.3631549482263769
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "p_hierro": 0.6583301154863657,
+      "p_madera": 0.008656171374921374,
+      "p_plastico_rigido": 0.23234899244274257,
+      "p_vidrio": 0.1006647206959707
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.24098619281952613,
+      "p_madera": 0.11533358308358309,
+      "p_plastico_rigido": 0.59290470332137,
+      "p_vidrio": 0.05077552077552078
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "p_hierro": 0.33781711498378164,
+      "p_madera": 0.0041669441669441665,
+      "p_plastico_rigido": 0.18639964356631034,
+      "p_vidrio": 0.47161629728296406
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "p_hierro": 0.27461981305731303,
+      "p_madera": 0.01734261109261109,
+      "p_plastico_rigido": 0.20514727633477653,
+      "p_vidrio": 0.5028902995152995
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.07724209994798227,
+      "p_madera": 0.2903579916815209,
+      "p_plastico_rigido": 0.4760485650877809,
+      "p_vidrio": 0.15635134328271588
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.013893483060149729,
+      "p_madera": 0.739307498057498,
+      "p_plastico_rigido": 0.20201971639471647,
+      "p_vidrio": 0.04477930248763582
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "madera",
+      "p_hierro": 0.04215515140270042,
+      "p_madera": 0.39750130715326804,
+      "p_plastico_rigido": 0.300337820676056,
+      "p_vidrio": 0.26000572076797573
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "p_hierro": 0.2998680618323474,
+      "p_madera": 0.16693346071917498,
+      "p_plastico_rigido": 0.1583088260945404,
+      "p_vidrio": 0.37488965135393715
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "p_hierro": 0.6952284370721866,
+      "p_madera": 0.0027056878306878306,
+      "p_plastico_rigido": 0.23473483807858814,
+      "p_vidrio": 0.06733103701853702
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.23234645292978628,
+      "p_madera": 0.10037931667098332,
+      "p_plastico_rigido": 0.6264728573895241,
+      "p_vidrio": 0.04080137300970634
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.3604386616875652,
+      "p_madera": 0.056664563831230474,
+      "p_plastico_rigido": 0.24882496362856277,
+      "p_vidrio": 0.33407181085264154
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "p_hierro": 0.2519988526587791,
+      "p_madera": 0.23471192335714408,
+      "p_plastico_rigido": 0.1814596250359119,
+      "p_vidrio": 0.3318295989481653
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.14594355608081105,
+      "p_madera": 0.3393574682398212,
+      "p_plastico_rigido": 0.301710337955436,
+      "p_vidrio": 0.21298863772393195
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.19321888727648528,
+      "p_madera": 0.4729543679813289,
+      "p_plastico_rigido": 0.18439770614280418,
+      "p_vidrio": 0.14942903859938186
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.13497540730874066,
+      "p_madera": 0.2896269332519333,
+      "p_plastico_rigido": 0.314993286805787,
+      "p_vidrio": 0.2604043726335394
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "p_hierro": 0.29918793574150715,
+      "p_madera": 0.15204723385080526,
+      "p_plastico_rigido": 0.22472273824059544,
+      "p_vidrio": 0.32404209216709223
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "p_hierro": 0.41029814674024245,
+      "p_madera": 0.16261126135574663,
+      "p_plastico_rigido": 0.26657741264726564,
+      "p_vidrio": 0.16051317925674546
+    },
+    {
+      "variante": "resta_fondo",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.29884453286078677,
+      "p_madera": 0.17007230705740764,
+      "p_plastico_rigido": 0.4353656528083774,
+      "p_vidrio": 0.09571750727342836
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.6309686977300492,
+      "p_madera": 0.020387165303831972,
+      "p_plastico_rigido": 0.05113647463647463,
+      "p_vidrio": 0.29750766232964376
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.5573156311281311,
+      "p_madera": 0.011115154521404522,
+      "p_plastico_rigido": 0.13535213860213863,
+      "p_vidrio": 0.2962170757483258
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.06721031746031746,
+      "p_madera": 0.36156340418840416,
+      "p_plastico_rigido": 0.36275273337773345,
+      "p_vidrio": 0.208473544973545
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.025031746031746033,
+      "p_madera": 0.5289670452096922,
+      "p_plastico_rigido": 0.42946152621887923,
+      "p_vidrio": 0.01653968253968254
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.06248316498316497,
+      "p_madera": 0.31794586894586907,
+      "p_plastico_rigido": 0.4382740716074047,
+      "p_vidrio": 0.18129689446356112
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "p_hierro": 0.1862876250733394,
+      "p_madera": 0.21353818800247368,
+      "p_plastico_rigido": 0.2846307885236457,
+      "p_vidrio": 0.3155433984005413
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "p_hierro": 0.6815953884078885,
+      "p_madera": 0.016167989417989418,
+      "p_plastico_rigido": 0.22675532106782112,
+      "p_vidrio": 0.07548130110630111
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.3153936141019474,
+      "p_madera": 0.1685585063085063,
+      "p_plastico_rigido": 0.48109906605739944,
+      "p_vidrio": 0.03494881353214687
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.44331343348010005,
+      "p_madera": 0.011874298540965209,
+      "p_plastico_rigido": 0.10749782008115344,
+      "p_vidrio": 0.43731444789778146
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.5543604404854404,
+      "p_madera": 0.02018761793761794,
+      "p_plastico_rigido": 0.11193417462167467,
+      "p_vidrio": 0.31351776695526706
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.09202926086259418,
+      "p_madera": 0.39807032782032775,
+      "p_plastico_rigido": 0.2556949346949349,
+      "p_vidrio": 0.25420547662214327
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.027225589225589226,
+      "p_madera": 0.5482168942168943,
+      "p_plastico_rigido": 0.39540672290672324,
+      "p_vidrio": 0.02915079365079365
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.036859788359788356,
+      "p_madera": 0.3049578415411747,
+      "p_plastico_rigido": 0.5153525841442507,
+      "p_vidrio": 0.142829785954786
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "p_hierro": 0.2062354669140383,
+      "p_madera": 0.2200018169661027,
+      "p_plastico_rigido": 0.1719283348926206,
+      "p_vidrio": 0.40183438122723836
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "p_hierro": 0.7610589225589229,
+      "p_madera": 0.013582671957671958,
+      "p_plastico_rigido": 0.17545475589225595,
+      "p_vidrio": 0.049903649591149596
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.28321899551066215,
+      "p_madera": 0.15138135321468651,
+      "p_plastico_rigido": 0.5328361992945325,
+      "p_vidrio": 0.032563451980118646
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.41713127138694706,
+      "p_madera": 0.0589921051171051,
+      "p_plastico_rigido": 0.23214092080758755,
+      "p_vidrio": 0.29173570268836
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.38829438963813956,
+      "p_madera": 0.23077920054482567,
+      "p_plastico_rigido": 0.11908442483442486,
+      "p_vidrio": 0.26184198498261013
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.13891567346959513,
+      "p_madera": 0.3517336946368808,
+      "p_plastico_rigido": 0.271568570001168,
+      "p_vidrio": 0.2377820618923561
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.2029019295428609,
+      "p_madera": 0.39207004392666156,
+      "p_plastico_rigido": 0.27061033615077734,
+      "p_vidrio": 0.13441769037970033
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.1360912729246063,
+      "p_madera": 0.22717634603051276,
+      "p_plastico_rigido": 0.4071746517371517,
+      "p_vidrio": 0.22955772930772936
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.2184652781081353,
+      "p_madera": 0.17940791615791613,
+      "p_plastico_rigido": 0.3018904884797743,
+      "p_vidrio": 0.30023631725417443
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "p_hierro": 0.42193078320100386,
+      "p_madera": 0.16636717037728063,
+      "p_plastico_rigido": 0.26378057695980495,
+      "p_vidrio": 0.1479214694619107
+    },
+    {
+      "variante": "sin_ataque_10ms",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.3360482435019974,
+      "p_madera": 0.19668476866986928,
+      "p_plastico_rigido": 0.379462834176392,
+      "p_vidrio": 0.08780415365174139
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "p_hierro": 0.33055559872226525,
+      "p_madera": 0.02893755010421677,
+      "p_plastico_rigido": 0.09940836324169659,
+      "p_vidrio": 0.5410984879318214
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.4210516345038404,
+      "p_madera": 0.014696673696673695,
+      "p_plastico_rigido": 0.24299311799311804,
+      "p_vidrio": 0.32125857380636813
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.043126984126984125,
+      "p_madera": 0.37089648468815134,
+      "p_plastico_rigido": 0.2580284391534392,
+      "p_vidrio": 0.32794809203142544
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.02493121693121693,
+      "p_madera": 0.5830862424612425,
+      "p_plastico_rigido": 0.39027883690383697,
+      "p_vidrio": 0.0017037037037037038
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.09704369087702418,
+      "p_madera": 0.35045415078748415,
+      "p_plastico_rigido": 0.3725855317521984,
+      "p_vidrio": 0.1799166265832933
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "p_hierro": 0.23461200968343818,
+      "p_madera": 0.19785169724455434,
+      "p_plastico_rigido": 0.22671483542912113,
+      "p_vidrio": 0.3408214576428862
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "p_hierro": 0.7310634018759018,
+      "p_madera": 0.015966325341325343,
+      "p_plastico_rigido": 0.12238661801161801,
+      "p_vidrio": 0.1305836547711548
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "A_espectral",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.21706875840209175,
+      "p_madera": 0.1324670021336688,
+      "p_plastico_rigido": 0.5144458057374725,
+      "p_vidrio": 0.13601843372676706
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "p_hierro": 0.22804177304177306,
+      "p_madera": 0.011100529100529102,
+      "p_plastico_rigido": 0.11410791060791059,
+      "p_vidrio": 0.6467497872497873
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.4542461767535295,
+      "p_madera": 0.025283399470899477,
+      "p_plastico_rigido": 0.18221939634439643,
+      "p_vidrio": 0.33825102743117474
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.04193414555669458,
+      "p_madera": 0.41360521731355054,
+      "p_plastico_rigido": 0.24064724590950107,
+      "p_vidrio": 0.3038133912202539
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.02583934583934584,
+      "p_madera": 0.6177262644762646,
+      "p_plastico_rigido": 0.3415349187849189,
+      "p_vidrio": 0.014899470899470899
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.043800244508577835,
+      "p_madera": 0.3151276316276317,
+      "p_plastico_rigido": 0.4921761201761199,
+      "p_vidrio": 0.14889600368767034
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "p_hierro": 0.19074510674510672,
+      "p_madera": 0.16807764986336418,
+      "p_plastico_rigido": 0.28180002140716426,
+      "p_vidrio": 0.3593772219843648
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "p_hierro": 0.8338672114922114,
+      "p_madera": 0.01094047619047619,
+      "p_plastico_rigido": 0.07270161782661783,
+      "p_vidrio": 0.08249069449069452
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "C_combinado",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.1697057957474624,
+      "p_madera": 0.09350292608625943,
+      "p_plastico_rigido": 0.6477621236787902,
+      "p_vidrio": 0.08902915448748783
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ001",
+      "real": "hierro",
+      "prediccion": "vidrio",
+      "p_hierro": 0.2669247218830551,
+      "p_madera": 0.0632672975172975,
+      "p_plastico_rigido": 0.25627686511019854,
+      "p_vidrio": 0.41353111548944876
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ002",
+      "real": "hierro",
+      "prediccion": "hierro",
+      "p_hierro": 0.3201623913259942,
+      "p_madera": 0.23256996013246026,
+      "p_plastico_rigido": 0.17290491452991458,
+      "p_vidrio": 0.2743627340116313
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ003",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.12687400680292843,
+      "p_madera": 0.3564002348867545,
+      "p_plastico_rigido": 0.21920642288902092,
+      "p_vidrio": 0.2975193354212963
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ004",
+      "real": "madera",
+      "prediccion": "madera",
+      "p_hierro": 0.20285166499259635,
+      "p_madera": 0.41912964255243684,
+      "p_plastico_rigido": 0.2510189914932562,
+      "p_vidrio": 0.1269997009617109
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ005",
+      "real": "plastico_rigido",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.1533715358715359,
+      "p_madera": 0.24343048695132033,
+      "p_plastico_rigido": 0.3743303818095485,
+      "p_vidrio": 0.2288675953675954
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ006",
+      "real": "plastico_rigido",
+      "prediccion": "vidrio",
+      "p_hierro": 0.24262747041318472,
+      "p_madera": 0.17156467077895649,
+      "p_plastico_rigido": 0.272932511932512,
+      "p_vidrio": 0.31287534687534685
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ007",
+      "real": "vidrio",
+      "prediccion": "hierro",
+      "p_hierro": 0.4466647899350106,
+      "p_madera": 0.16626633833894858,
+      "p_plastico_rigido": 0.21159622543170337,
+      "p_vidrio": 0.17547264629433754
+    },
+    {
+      "variante": "banda_hasta_10k",
+      "modelo": "fusion_50_50",
+      "objeto_id": "OBJ008",
+      "real": "vidrio",
+      "prediccion": "plastico_rigido",
+      "p_hierro": 0.2868858156520696,
+      "p_madera": 0.1786390165824505,
+      "p_plastico_rigido": 0.39613620401642863,
+      "p_vidrio": 0.1383389637490515
+    }
+  ],
+  "originales": {
+    "YIYI_HIERRO_01.m4a": "072ba28167544b58bb83e18ff47933bba915788cdeabd3eaed5463a0eae18ffc",
+    "YIYI_HIERRO_02.m4a": "9b7f2baa3fa8962012107b567639d3e67e2bba2ccb6e27f68df87d6919b603bb",
+    "YIYI_MADERA_01.m4a": "2deb8a25ed248c2438c699bb7d72830c02396a0bec90c46d7e9e3db1b7d7b0c7",
+    "YIYI_MADERA_02.m4a": "8663793d7e85d34ae35859fef3668acd80481e65529b93863858407befb379a3",
+    "YIYI_PLASTICO_01.m4a": "c85c18822badec28c5dcd3dd4605ce555854c46cd017857ff413e5a9a1fd0821",
+    "YIYI_PLASTICO_02.m4a": "9cbd9a3be013f5e1298ef286e49064ca33fcda3d15f112b7fdbfb2be71d734a8",
+    "YIYI_VIDRIO_01.m4a": "d1de783a3df5aff320bb74fa7272c4d4abc64146db2e1363684818514c46ee39",
+    "YIYI_VIDRIO_02.m4a": "5dad0f1b8c22c1fc7d9dc148778c86d28f6a3037ce9718e164585dcec9adaa84"
+  },
+  "sha256_caracteristicas": "29f2d75ae00f209cad74123b32e11ec7f2cf73b7108d66e0831cb05f087bd72d"
+}

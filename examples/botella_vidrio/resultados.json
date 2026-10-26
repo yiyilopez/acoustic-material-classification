@@ -1,0 +1,22 @@
+{
+  "fp_hz": 2300.0,
+  "centroide_hz": 2998.7062699293942,
+  "ancho_hz": 2640.981563287289,
+  "ancho_relativo": 0.880706986799835,
+  "d90_s": 0.06011472468284736,
+  "t05_s": 0.0036105726940161105,
+  "t95_s": 0.06372529737686347,
+  "energia_corregida": 99.92490351267172,
+  "fs_hz": 48000,
+  "ventana_espectral_muestras": 4800,
+  "separacion_bins_hz": 10.0,
+  "potencia_fondo": 3.893947052006016e-06,
+  "media_fondo": 2.0366244845920138e-06,
+  "duracion_ventana_temporal_s": 0.506,
+  "alternativa_desplazada_10ms": {
+    "fp_hz": 2300.0,
+    "centroide_hz": 2658.317592578685,
+    "ancho_hz": 1757.870123600433,
+    "ancho_relativo": 0.6612716736735815
+  }
+}

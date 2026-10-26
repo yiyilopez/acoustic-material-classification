@@ -1,0 +1,64 @@
+{
+  "version_esquema": 1,
+  "rutas": {
+    "originales": "datos/originales",
+    "metadatos": "datos/metadatos",
+    "inspeccion": "resultados/inspeccion"
+  },
+  "inspeccion": {
+    "umbral_aviso_escala_completa": 0.999,
+    "max_bloques_figura": 2500
+  },
+  "plan_analisis": {
+    "materiales": [
+      "madera",
+      "vidrio",
+      "hierro",
+      "plastico_rigido"
+    ],
+    "predictores": [
+      "fp_hz",
+      "centroide_hz",
+      "ancho_relativo",
+      "d90_s"
+    ],
+    "banda_hz": [
+      100,
+      20000
+    ],
+    "ventana_espectral_ms": 100,
+    "tratamiento_ruido_d90": "Potencia de fondo previa descontada por bloques de 1 ms antes de rectificar e integrar; sin taper; D90=t95-t05. Cola no aislada: dato ausente. Sensibilidad a 0.5×/1.5×fondo y final +50ms.",
+    "validacion_piloto": "dejar_un_participante_fuera_sin_compartir_objetos",
+    "random_forest": {
+      "n_estimators": 300,
+      "max_depth": 3,
+      "min_samples_leaf": 3,
+      "random_state": 42
+    }
+  },
+  "extraccion_piloto_v1": {
+    "banda_hz": [
+      100,
+      20000
+    ],
+    "ventana_espectral_ms": 100,
+    "contexto_pre_ms": 2,
+    "bloque_energia_ms": 1,
+    "suavizado_final_ms": 5,
+    "persistencia_final_ms": 30,
+    "factor_potencia_final": 2,
+    "max_cola_ms": 750,
+    "fondo_inicio_antes_pico_ms": 350,
+    "fondo_fin_antes_pico_ms": 50,
+    "rampa_inicial_ms": 1,
+    "rampa_final_ms": 10
+  },
+  "entrenamiento_piloto_v1": {
+    "validacion_ejecutada": "dejar_un_objeto_completo_fuera",
+    "comparacion": "mismos 36 golpes completos y mismos ocho objetos en A, B y C",
+    "ponderacion": "igual peso por clase y por objeto dentro de cada clase",
+    "agregacion_por_objeto": "media de probabilidades por golpe",
+    "busqueda_hiperparametros": false,
+    "incertidumbre": "remuestreo descriptivo pareado de objetos; no intervalo de generalización"
+  }
+}

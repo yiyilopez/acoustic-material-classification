@@ -1,0 +1,9 @@
+objeto_id,material,descripcion,largo_mm,ancho_mm,alto_mm,espesor_mm,observaciones
+OBJ001,hierro,Pieza de cortar pasto,140,150,,,Material específico declarado: Hierro. Grosor/alto declarado: 10 cm; no se distingue altura de espesor. Correspondencia con archivo 01 confirmada por la usuaria.
+OBJ002,hierro,Tubo de hierro,250,20,,,Grosor/alto declarado: 0.3 cm; no se distingue altura de espesor. Correspondencia con archivo 02 confirmada por la usuaria.
+OBJ003,madera,Rama de árbol,250,40,,,Material específico declarado: Tronco. Grosor/alto declarado: 4 cm; no se distingue altura de espesor. Correspondencia con archivo 01 confirmada por la usuaria.
+OBJ004,madera,Palo para sostener,420,50,,,Material específico declarado: Madera procesada. Grosor/alto declarado: 5 cm; no se distingue altura de espesor. Correspondencia con archivo 02 confirmada por la usuaria.
+OBJ005,plastico_rigido,Bomba plástica,100,50,,,Material específico declarado: Flotador de baño. Grosor/alto declarado: 0.1 cm; no se distingue altura de espesor. Correspondencia con archivo 01 confirmada por la usuaria.
+OBJ006,plastico_rigido,Caño,90,20,,,Material específico declarado: Caño de agua. Grosor/alto declarado: 0.5 cm; no se distingue altura de espesor. Correspondencia con archivo 02 confirmada por la usuaria.
+OBJ007,vidrio,Vaso roto,100,70,,,Material específico declarado: Vidrio de vaso. Grosor/alto declarado: 0.5 cm; no se distingue altura de espesor. Correspondencia con archivo 01 confirmada por la usuaria.
+OBJ008,vidrio,Botella de vidrio,340,90,,,Material específico declarado: Vidrio. Grosor/alto declarado: 0.5 cm; no se distingue altura de espesor. Correspondencia con archivo 02 confirmada por la usuaria.

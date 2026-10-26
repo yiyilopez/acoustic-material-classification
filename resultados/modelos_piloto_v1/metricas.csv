@@ -1,0 +1,4 @@
+modelo,exactitud_balanceada_objetos,aciertos_objetos,objetos,rango_descriptivo_inferior,rango_descriptivo_superior
+A_espectral,0.25,2,8,0.0,0.5
+B_temporal,0.375,3,8,0.25,0.5
+C_combinado,0.125,1,8,0.0,0.25
