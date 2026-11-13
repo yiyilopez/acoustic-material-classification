@@ -17,6 +17,20 @@ control de calidad, trazabilidad de datos y comparación de modelos por objeto.
 · [método de extracción](docs/metodo_descriptores.md)
 · [evaluación inicial](resultados/modelos_piloto_v1/informe.md).
 
+## App de vigas en voladizo
+
+La [app del laboratorio](app_acustica/README.md) analiza grabaciones WAV y compara
+la frecuencia de una viga a distintas longitudes libres. Incluye un ejemplo
+con cinco mediciones de una viga de madera. Para abrirla, desde la raíz del
+repositorio:
+
+```sh
+python -m pip install -e ".[analisis]"
+python scripts/app_acustica.py
+```
+
+Luego entra a [http://127.0.0.1:8765/](http://127.0.0.1:8765/).
+
 ## La pregunta
 
 ¿Qué frecuencias destacan al golpear un objeto, cómo se reparte su potencia
